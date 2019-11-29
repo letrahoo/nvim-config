@@ -2,6 +2,7 @@ call plug#begin(g:configFolder.'/plugged')
 Plug 'kien/ctrlp.vim'
 Plug 'mileszs/ack.vim'
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'vim-ruby/vim-ruby'
 call plug#end()
 
 " CtrlP settings
@@ -19,4 +20,9 @@ endif
 " let g:ackhighlight = 1
 
 " PaperColor color scheme
-colorscheme PaperColor
+colorscheme molokai
+let g:molokai_original = 1
+let g:rehash256 = 1
+
+" ruby extesion config
+set nocompatible " We're running Vim not Vi!

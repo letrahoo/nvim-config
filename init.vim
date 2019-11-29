@@ -1,5 +1,7 @@
+" disable Vi compatible mode
+set nocompatible " We're running Vim not Vi!
 " Colors {{{
-syntax enable " enable syntax processing
+syntax on " enable syntax processing
 set number " show line numbers
 set relativenumber " show hybrid line numbers
 set background=dark
@@ -16,7 +18,9 @@ set modelines=1
 set expandtab " tabs are spaces
 set showcmd " show command in bottom bar
 set cursorline " highlight current line
-filetype indent on " load filetyoe-specific indent files
+filetype on " Enable filetype detection
+filetype indent on " Enable filetype-specific indenting
+filetype plugin on " Enable filetype-specific plugins
 " }}}
 set wildmenu " visual auto complete for command menu
 set lazyredraw " redraw only when we need to.
