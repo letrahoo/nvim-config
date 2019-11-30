@@ -1,2 +1,5 @@
 # vim.plug plugin directory
 plugged
+
+# vim history entry file
+.netrwhist

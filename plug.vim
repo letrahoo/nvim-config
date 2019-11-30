@@ -38,9 +38,8 @@ let g:airline#extensions#tabline#formatter = 'default'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#branch#enabled = 1
 " let g:airline_section_b = '%{strftime("%H:%M")}'
-let g:airline_theme='molokai'
+let g:airline_theme='fruit_punch'
 
 call plug#end()
 
-" packadd! {name}
 colorscheme dracula
