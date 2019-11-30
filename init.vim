@@ -6,6 +6,11 @@ set number " show line numbers
 set relativenumber " show hybrid line numbers
 set background=dark
 set termguicolors " 
+" color scheme config
+" let g:molokai_original = 1
+let g:rehash256 = 1
+" colorscheme molokai
+
 " }}}
 " Misc {{{
 
@@ -23,7 +28,7 @@ filetype indent on " Enable filetype-specific indenting
 filetype plugin on " Enable filetype-specific plugins
 " }}}
 set wildmenu " visual auto complete for command menu
-set lazyredraw " redraw only when we need to.
+" set lazyredraw " redraw only when we need to.
 " set showmatch " highlight matching [{()}]
 set incsearch " search as characters are enterd
 set hlsearch " highlight matches
