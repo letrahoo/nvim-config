@@ -1,3 +1,5 @@
+# whatever log files
+*.log
 # vim.plug plugin directory
 plugged
 

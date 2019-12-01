@@ -17,6 +17,15 @@ endif
 let g:ackhighlight = 1
 
 " Application
+Plug 'scrooloose/nerdtree'
+let g:NERDSpaceDelims = 1
+" t - NERDTree
+map <silent> <leader>tt :NERDTreeToggle<cr>
+map <silent> <leader>tm :NERDTreeMirrow<cr> 
+map <silent> <leader>tj :NERDTreeFind<cr> 
+map <silent> <leader>tf :NERDTreeFocus<cr>
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'mbbill/undotree'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
