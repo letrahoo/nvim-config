@@ -33,7 +33,7 @@ set wildmenu " visual auto complete for command menu
 set incsearch " search as characters are enterd
 set hlsearch " highlight matches
 " turn off search highlight
-nnoremap <leader><space> :nohlsearch<CR>
+nnoremap <leader>nh :nohlsearch<CR>
 set foldenable " enable folding
 set foldlevelstart=10 " open most folds by default
 set foldmethod=indent " fold based on indent level

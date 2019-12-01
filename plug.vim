@@ -5,6 +5,7 @@ Plug 'kien/ctrlp.vim' " quick find file plugin
 let g:ctrlp_match_window = 'bottom,order:ttb'
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 " let g:ctrlp_user_command = 'ag %s -l --nocolor -hidden -g ""'
 
 Plug 'mileszs/ack.vim' " quick find content in directory plugin
@@ -19,6 +20,8 @@ let g:ackhighlight = 1
 " Application
 Plug 'scrooloose/nerdtree'
 let g:NERDSpaceDelims = 1
+let g:NERDTreeShowHidden=1
+let NERDTreeIgnore = ['^.git$']
 " t - NERDTree
 map <silent> <leader>tt :NERDTreeToggle<cr>
 map <silent> <leader>tm :NERDTreeMirrow<cr> 
@@ -35,6 +38,8 @@ Plug 'dracula/vim'
 " language support
 Plug 'vim-ruby/vim-ruby' " ruby language support plugin
 Plug 'elzr/vim-json' " json syntax highlight
+Plug 'leafgarland/typescript-vim'
+Plug 'ianks/vim-tsx'
 
 " UI
 Plug 'luochen1990/rainbow' " rainbow parentheses
@@ -49,6 +54,8 @@ let g:airline#extensions#branch#enabled = 1
 " let g:airline_section_b = '%{strftime("%H:%M")}'
 let g:airline_theme='fruit_punch'
 
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 call plug#end()
 
 colorscheme dracula
