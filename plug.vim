@@ -40,7 +40,10 @@ Plug 'vim-ruby/vim-ruby' " ruby language support plugin
 Plug 'elzr/vim-json' " json syntax highlight
 Plug 'leafgarland/typescript-vim'
 Plug 'ianks/vim-tsx'
-
+Plug 'w0rp/ale'
+let g:ale_linters = {
+			\'typescript': ['tslint']
+      \}
 " UI
 Plug 'luochen1990/rainbow' " rainbow parentheses
 let g:rainbow_active = 1
