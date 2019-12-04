@@ -4,6 +4,7 @@ set nocompatible " We're running Vim not Vi!
 syntax on " enable syntax processing
 set number " show line numbers
 set relativenumber " show hybrid line numbers
+set nrformats=
 set background=dark
 set termguicolors " 
 " color scheme config
@@ -33,7 +34,7 @@ set wildmenu " visual auto complete for command menu
 set incsearch " search as characters are enterd
 set hlsearch " highlight matches
 " turn off search highlight
-nnoremap <leader>nh :nohlsearch<CR>
+map <leader>nh :nohlsearch<CR>
 set foldenable " enable folding
 set foldlevelstart=10 " open most folds by default
 set foldmethod=indent " fold based on indent level
