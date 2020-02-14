@@ -1,5 +1,6 @@
 " disable Vi compatible mode
 set nocompatible " We're running Vim not Vi!
+set notagbsearch
 " Colors {{{
 syntax on " enable syntax processing
 set number " show line numbers
