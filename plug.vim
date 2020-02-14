@@ -44,6 +44,19 @@ Plug 'w0rp/ale'
 let g:ale_linters = {
 			\'typescript': ['tslint']
       \}
+let g:ale_fixers = {
+      \'javascript': [
+			\	'prettier'
+			\],
+      \'typescript': ['tslint', 'prettier'],
+			\'json': ['prettier'],
+			\'json5': ['prettier'],
+      \'css': ['stylelint', 'prettier'],
+      \'less': ['stylelint', 'prettier'],
+			\'vue': ['prettier'],
+			\}
+let g:ale_fix_on_save = 1
+
 " UI
 Plug 'luochen1990/rainbow' " rainbow parentheses
 let g:rainbow_active = 1
