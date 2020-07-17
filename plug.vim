@@ -36,6 +36,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'dracula/vim'
 
 " language support
+Plug 'wting/rust.vim' " rust language support plugin
 Plug 'vim-ruby/vim-ruby' " ruby language support plugin
 Plug 'elzr/vim-json' " json syntax highlight
 Plug 'leafgarland/typescript-vim'
