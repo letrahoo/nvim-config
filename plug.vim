@@ -17,6 +17,8 @@ endif
 " highlight seaching keyword
 let g:ackhighlight = 1
 
+" tmux integration
+Plug 'christoomey/vim-tmux-navigator'
 " Application
 Plug 'scrooloose/nerdtree'
 let g:NERDSpaceDelims = 1
