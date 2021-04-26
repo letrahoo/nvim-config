@@ -75,6 +75,9 @@ let g:airline_theme='fruit_punch'
 
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+" wakatime data tracing
+Plug 'wakatime/vim-wakatime'
 call plug#end()
 
 colorscheme dracula
