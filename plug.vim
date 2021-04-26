@@ -17,6 +17,8 @@ endif
 " highlight seaching keyword
 let g:ackhighlight = 1
 
+" tmux integration
+Plug 'christoomey/vim-tmux-navigator'
 " Application
 Plug 'scrooloose/nerdtree'
 let g:NERDSpaceDelims = 1
@@ -36,6 +38,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'dracula/vim'
 
 " language support
+Plug 'wting/rust.vim' " rust language support plugin
 Plug 'vim-ruby/vim-ruby' " ruby language support plugin
 Plug 'elzr/vim-json' " json syntax highlight
 Plug 'leafgarland/typescript-vim'
@@ -72,6 +75,9 @@ let g:airline_theme='fruit_punch'
 
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+" wakatime data tracing
+Plug 'wakatime/vim-wakatime'
 call plug#end()
 
 colorscheme dracula
