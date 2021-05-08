@@ -2,7 +2,7 @@
 call plug#begin(g:configFolder.'/plugged')
 Plug 'kien/ctrlp.vim' " quick find file plugin
 " CtrlP settings
-let g:ctrlp_match_window = 'bottom,order:ttb'
+
 let g:ctrlp_switch_buffer = 0
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
@@ -38,6 +38,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'dracula/vim'
 
 " language support
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'wting/rust.vim' " rust language support plugin
 Plug 'vim-ruby/vim-ruby' " ruby language support plugin
 Plug 'elzr/vim-json' " json syntax highlight
