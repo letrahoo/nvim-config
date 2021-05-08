@@ -2,11 +2,24 @@
 set nocompatible " We're running Vim not Vi!
 set notagbsearch
 
+" Init variable
+if has('nvim')
+  let $VIM_DIRECTORY = "~/.config/nvim"
+else
+  let $VIM_DIRECTORY = "~/.vim"
+endif
+
+set nobackup
+set undodir=$VIM_DIRECTORY/undodir
+
+if !isdirectory(&undodir)
+  call mkdir(&undodir, 'p', 0700)
+endif
+
 " Colors {{{
 syntax on " enable syntax processing
 set number " show line numbers
 set relativenumber " show hybrid line numbers
-set nrformats=
 set background=dark
 set termguicolors " 
 " color scheme config
